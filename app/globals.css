@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #FFFFFF;
+    --foreground: #FFFFFF;
+  }
+}
+
+@font-face {
+  font-family: "Gill Sans MT";
+  src: local("Gill Sans MT"),
+    local("GillSansMT"),
+    local("Gill Sans");
+}
+
+
+
+
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Gill Sans MT", "Gill Sans", sans-serif;
+}
+
+
+h1 {
+  font-family: "Gill Sans MT", "Gill Sans", sans-serif;
+}
